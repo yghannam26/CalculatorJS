@@ -1,0 +1,110 @@
+ *{
+    border: 1px solid red;
+ }
+ body {
+    margin: 0;
+    background-color: rgb(200, 208, 208);
+}
+
+#Header {
+    background-color: #1F2937;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20vh;
+}
+#Header h1{
+    align-self: center;
+}
+#mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #466796;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+#Calculator{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    border-radius: 20px;
+    border: 10px solid rgb(172, 166, 166);
+}
+#Calculator #Display{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 60px;
+    background-color: rgb(128, 200, 128);
+    border-bottom: 9px solid  rgb(172, 166, 166);
+    padding-right: 2px;
+    font-size: 25px;
+}
+#Calculator #numbersNoperators{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1;
+    flex-basis: 100%;
+    background-color:rgb(184, 203, 203);
+}
+#Calculator #numberPad{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1 1 65%;
+    justify-content: center;
+    align-items: center;
+}
+#Calculator #numberPad .numPad{
+    flex:1 1 25%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px;
+    padding: 20px;
+}
+#Calculator #numberPad #num0{
+    flex-basis: 58%;
+}
+#numberPad .numPad:hover{
+    background-color: rgb(225, 203, 203); 
+}
+#Calculator #oprPad{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 30%;
+}
+#Calculator #oprPad .oprPad{
+    flex:1 1 35%;
+    margin: 1px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(72, 38, 38);
+}
+#oprPad #del{
+    padding-left: 0;
+    padding-right: 0;
+}
+#oprPad .oprPad:hover{
+    background-color: rgb(174, 158, 158); 
+}
+#oprPad #clr:hover, #oprPad #del:hover{
+    background-color: rgb(235, 120, 79);
+}
+#Footer {
+    background-color:#1F2937;
+    color:#F9FAF8;
+    text-align: center;
+    min-height: 80px;
+    padding-top: 23px;
+    min-height: 10vh;
+} 
